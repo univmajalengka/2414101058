@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wisata Pulesari - Promo Paket Wisata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom hero styling */
+      .hero-bg {
+        position: relative;
+        background-image: linear-gradient(
+            120deg,
+            rgba(2, 6, 23, 0.85),
+            rgba(59, 130, 246, 0.6)
+          ),
+          url("/mnt/data/WhatsApp Image 2025-11-25 at 10.12.52_fee86099.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 75vh;
+      }
+      .hero-card {
+        backdrop-filter: blur(18px);
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur z-30 shadow-sm">
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            src="fahmi 4.png"
+            alt="logo"
+            class="w-10 h-10 rounded-md object-cover"
+          />
+          <div>
+            <h1 class="font-bold">Wisata jeep gunung merapi yogyakarta</h1>
+            <p class="text-xs text-gray-500">Alam & Budaya Tradisi</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-6 items-center text-sm">
+          <a href="#galeri" class="hover:text-blue-600">Galeri</a>
+          <a href="#paket" class="hover:text-blue-600">Paket</a>
+          <a href="#video" class="hover:text-blue-600">Video</a>
+          <a href="#kontak" class="bg-blue-600 text-white px-4 py-2 rounded-md"
+            >Hubungi</a
+          >
+        </nav>
+        <!-- mobile menu button -->
+        <div class="md:hidden">
+          <button id="btnMenu" class="p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobileNav" class="md:hidden hidden px-4 pb-4">
+        <a href="#galeri" class="flex py-2">Galeri</a>
+        <a href="#paket" class="flex py-2">Paket</a>
+        <a href="#video" class="flex py-2">Video</a>
+        <a href="#kontak" class="flex py-2">Hubungi</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-bg flex items-center">
+      <div
+        class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 text-white"
+      >
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-blue-200">
+            Explore Merapi
+          </p>
+          <h2 class="text-3xl md:text-5xl font-black leading-tight mt-3">
+            Selamat Datang di Wisata Jeep Gunung Merapi
+          </h2>
+          <p class="mt-5 text-blue-50 text-lg">
+            Rasakan sensasi jelajah hutan, lava tour, dan budaya lokal ditemani
+            guide profesional. Paket eksklusif, aman, dan penuh cerita seru.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a
+              href="#paket"
+              class="bg-blue-500 hover:bg-blue-400 transition text-white px-6 py-3 rounded-full font-semibold"
+              >Lihat Paket</a
+            >
+            <a
+              href="#galeri"
+              class="bg-white/10 hover:bg-white/20 transition border border-white/40 text-white px-6 py-3 rounded-full font-semibold"
+              >Lihat Galeri</a
+            >
+          </div>
+          <div class="mt-8 grid grid-cols-3 gap-4 text-center text-white/90">
+            <div>
+              <p class="text-3xl font-bold">150+</p>
+              <p class="text-xs uppercase tracking-wider text-blue-100">
+                Trip per bulan
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold">4.9/5</p>
+              <p class="text-xs uppercase tracking-wider text-blue-100">
+                Rating wisata
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold">24/7</p>
+              <p class="text-xs uppercase tracking-wider text-blue-100">
+                Support lokal
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-5">
+          <div class="hero-card rounded-2xl p-5 shadow-xl">
+            <p class="text-sm text-blue-100">Highlight</p>
+            <h3 class="text-2xl font-semibold mt-2">Jeep Lava Tour</h3>
+            <p class="mt-3 text-blue-50">
+              Menelusuri jalur lava dan spot sunrise terbaik dengan armada jeep
+              terbaru.
+            </p>
+            <ul class="mt-4 space-y-2 text-blue-50 text-sm">
+              <li>• Sunrise point dengan view spektakuler</li>
+              <li>• Guide lokal profesional bersertifikat</li>
+              <li>• Paket dokumentasi drone opsional</li>
+            </ul>
+          </div>
+          <div
+            class="hero-card rounded-2xl p-5 shadow-xl flex items-center justify-between"
+          >
+            <div>
+              <p class="text-sm text-blue-100">Promo Terbatas</p>
+              <p class="text-2xl font-bold mt-1">Diskon 20%</p>
+              <p class="text-blue-50 text-sm mt-1">Untuk pemesanan weekday</p>
+            </div>
+            <a
+              href="#kontak"
+              class="bg-white text-slate-900 font-bold px-4 py-2 rounded-full"
+              >Booking</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri (foto-foto kegiatan) -->
+    <section id="galeri" class="max-w-6xl mx-auto px-4 py-12">
+      <h3 class="text-xl font-semibold mb-4">Foto-foto Kegiatan Wisata</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- reuse uploaded image as one of photos -->
+        <img
+          src="jeep 4.jpg"
+          alt="kegiatan1"
+          class="w-full h-40 object-cover rounded-md shadow"
+        />
+        <img
+          src="wisata jeep 1.jpg"
+          alt="kegiatan2"
+          class="w-full h-40 object-cover rounded-md shadow"
+        />
+        <img
+          src="wisata jeep.jpg"
+          alt="kegiatan3"
+          class="w-full h-40 object-cover rounded-md shadow"
+        />
+        <img
+          src="wisata jeep 3.jpg"
+          alt="kegiatan4"
+          class="w-full h-40 object-cover rounded-md shadow"
+        />
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="video" class="max-w-6xl mx-auto px-4 py-12">
+      <div class="mt-10">
+        <h4 class="text-lg font-semibold mb-4">Card Video YouTube</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a
+            href="https://youtu.be/QmmN2nh6trA?si=djsrzBIU2KohaVoO"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 block"
+          >
+            <img
+              src="https://img.youtube.com/vi/IeI0vR2DHKw/hqdefault.jpg"
+              alt="Video Merapi Jeep"
+              class="w-full h-40 object-cover rounded-md"
+            />
+            <h5 class="mt-3 font-semibold">Keseruan Wisata Jeep Merapi</h5>
+            <p class="text-sm text-gray-600 mt-1">
+              Klik kartu ini untuk menonton langsung di YouTube.
+            </p>
+          </a>
+          <a
+            href="https://youtu.be/XeSvDbt8_co?si=N3wtnsiWc9KwRHRP"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 block"
+          >
+            <img
+              src="wisata jeep 1.jpg"
+              alt="Video Petualangan Alam"
+              class="w-full h-40 object-cover rounded-md"
+            />
+            <h5 class="mt-3 font-semibold">Petualangan Alam Pulesari</h5>
+            <p class="text-sm text-gray-600 mt-1">
+              Video highlight perjalanan wisata bersama keluarga.
+            </p>
+          </a>
+          <a
+            href="https://youtu.be/yndRgiao5xY?si=qJfM_KprcMByxxo3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 block"
+          >
+            <img
+              src="wisata jeep.jpg"
+              alt="Video Budaya Lokal"
+              class="w-full h-40 object-cover rounded-md"
+            />
+            <h5 class="mt-3 font-semibold">Budaya Lokal & Kuliner</h5>
+            <p class="text-sm text-gray-600 mt-1">
+              Nikmati kuliner khas dan pertunjukan seni warga.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paket wisata -->
+    <section id="paket" class="max-w-6xl mx-auto px-4 py-12">
+      <h3 class="text-xl font-semibold mb-6">Daftar Paket Wisata</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Paket 1 -->
+        <article class="bg-white rounded-lg shadow p-4">
+          <img
+            src="jeep 4.jpg"
+            alt="paket1"
+            class="w-full h-40 object-cover rounded-md mb-4"
+          />
+          <h4 class="font-semibold">Paket Jelajah Alam Bersama Sahabat</h4>
+          <p class="text-sm text-gray-600 mt-2">
+            Trekking ke air terjun, berkemah, dan aktivitas arung jeram. Durasi
+            2 hari 1 malam.
+          </p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-bold">Rp650.000</span>
+            <button class="bg-blue-600 text-white px-3 py-1 rounded">
+              Detail
+            </button>
+          </div>
+        </article>
+
+        <!-- Paket 2 -->
+        <article class="bg-white rounded-lg shadow p-4">
+          <img
+            src="wisata jeep.jpg"
+            alt="paket2"
+            class="w-full h-40 object-cover rounded-md mb-4"
+          />
+          <h4 class="font-semibold">Paket Famly</h4>
+          <p class="text-sm text-gray-600 mt-2">
+            Wisata kuliner local, pertunjukan seni, dan kunjungan homestay
+            budaya. Durasi 1 hari.
+          </p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-bold">Rp400.000</span>
+            <button class="bg-blue-600 text-white px-3 py-1 rounded">
+              Detail
+            </button>
+          </div>
+        </article>
+
+        <!-- Paket 3 -->
+        <article class="bg-white rounded-lg shadow p-4">
+          <img
+            src="wisata jeep 1.jpg"
+            alt="paket3"
+            class="w-full h-40 object-cover rounded-md mb-4"
+          />
+          <h4 class="font-semibold">Paket Tenang Bersama Alam</h4>
+          <p class="text-sm text-gray-600 mt-2">
+            Aktivitas seru untuk keluarga: ATV, mandi sungai, game anak. Durasi
+            1 hari.
+          </p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-bold">Rp300.000</span>
+            <button class="bg-blue-600 text-white px-3 py-1 rounded">
+              Detail
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer / Kontak -->
+    <footer id="kontak" class="bg-white border-t mt-12">
+      <div
+        class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-start gap-6"
+      >
+        <div>
+          <h5 class="font-bold">Desa Wisata Pulesari</h5>
+          <p class="text-sm text-gray-600">Alamat: Jl. Wisata No.1, Pulesari</p>
+          <p class="text-sm text-gray-600">Telp: 0812-XXXX-XXXX</p>
+        </div>
+        <div>
+          <h6 class="font-semibold">Ikuti Kami</h6>
+          <div class="flex gap-3 mt-2">
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("btnMenu");
+      const mobileNav = document.getElementById("mobileNav");
+      btn?.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
